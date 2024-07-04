@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="16.242" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Review order history on Juice Shop" name="Review my order history" time="15.736">
+<failure type="java.lang.AssertionError" message="did not expect [2] but found [2]">
+<![CDATA[java.lang.AssertionError: did not expect [2] but found [2]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failEquals(Assert.java:1041)
+	at org.testng.Assert.assertNotEqualsImpl(Assert.java:147)
+	at org.testng.Assert.assertNotEquals(Assert.java:1531)
+	at org.testng.Assert.assertNotEquals(Assert.java:1535)
+	at com.juiceshop.steps.OrderHistorySteps.user_takes_a_screenshot_of_the_orders(OrderHistorySteps.java:59)
+	at ✽.user takes a screenshot of the orders(file:///C:/Users/USUARIO/eclipse-workspace/ProjectJuiceShop/src/test/resources/features/orderhistory.feature:11)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user is on Home page to review the orders "https://juice-shop.herokuapp.com/".passed
+When user sees the two orders...............................................passed
+Then user takes a screenshot of the orders..................................failed
+]]></system-out>
+</testcase>
+</testsuite>
